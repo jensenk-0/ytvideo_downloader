@@ -1,7 +1,7 @@
 # runs the main program
-from gui import Video_downloader
+from gui import video_downloader
 
-main = Video_downloader()
+main = video_downloader()
 
 
 
