@@ -1,5 +1,7 @@
 # code for the general user interface, gui
 import tkinter as tk
+from download import downloader
+
 
 
 
@@ -21,7 +23,7 @@ class Video_downloader(tk.Tk):
         
 
 
-        self.download_btn = tk.Button(self, text="Download", width=10, command= lambda: print(self.path.get(), self.link.get())).grid(row=3, column=0)
+        self.download_btn = tk.Button(self, text="Download", width=10, command= lambda: downloader(self.link.get(), self.path.get())).grid(row=3, column=0)
 
 
         
