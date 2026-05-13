@@ -8,7 +8,7 @@ def downloader(link, path):
     
     main_video = yt.streams.get_highest_resolution()
 
-    main_video.download(path)
+    main_video.download(output_path=path)
 
 
 
